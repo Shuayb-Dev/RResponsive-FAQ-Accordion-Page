@@ -1,0 +1,82 @@
+body {
+  min-height: 100vh;
+  display: flex; /* Use flexbox layout */
+  align-items: center;
+  background-image: url(imgs/background-pattern-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  flex-direction: column; /* Set flex direction to column */
+  background-color: hsl(275, 100%, 97%);
+}
+
+.faqContainer {
+  background-color: hsl(0, 0%, 100%);
+  width: 800px;
+  height: 500px;
+  position: relative;
+  top: 300px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq p {
+  color: hsl(292, 16%, 49%);
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: justify;
+  width: 700px;
+}
+
+.faq img {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 8px;
+  left: 40px;
+  display: inline;
+}
+
+.faq h1 {
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+  font-weight: 700;
+}
+
+.faq h1::before {
+  content: url(imgs/icon-star.svg);
+  position: relative;
+  top: 10px;
+  margin: 10px;
+}
+
+.faq h2 {
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 16%, 49%);
+  font-weight: 600;
+  position: relative;
+  left: 10px;
+}
+
+hr {
+  color: hsl(292, 16%, 49%);
+  width: 80%;
+  opacity: 0.2;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    height: 300px;
+    width: 300px;
+    background-size: 300%;
+  }
+
+  .faqContainer {
+    width: 300px;
+    height: 400px;
+    left: 15px;
+    top: 200px;
+  }
+}

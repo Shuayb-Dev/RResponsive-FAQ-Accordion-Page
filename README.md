@@ -1,1 +1,0 @@
-# RResponsive-FAQ-Accordion-Page
