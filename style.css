@@ -11,15 +11,19 @@ body {
 
 .faqContainer {
   background-color: hsl(0, 0%, 100%);
-  width: 800px;
-  height: 500px;
+  border-radius: 30px;
+  width: 850px;
+  height: auto;
   position: relative;
-  top: 300px;
+  top: 200px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.01);
 }
 
 .faq {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .faq p {
@@ -28,6 +32,13 @@ body {
   font-size: 1rem;
   text-align: justify;
   width: 700px;
+}
+
+#show,
+#showTwo,
+#showThree,
+#showFour {
+  display: none;
 }
 
 .faq img {
@@ -43,21 +54,25 @@ body {
   font-family: "Work Sans", sans-serif;
   color: hsl(292, 42%, 14%);
   font-weight: 700;
+  position: relative;
+  left: 50px;
+  font-size: 3.5rem;
 }
 
 .faq h1::before {
   content: url(imgs/icon-star.svg);
   position: relative;
   top: 10px;
-  margin: 10px;
+  margin: 30px;
 }
 
 .faq h2 {
   font-family: "Work Sans", sans-serif;
-  color: hsl(292, 16%, 49%);
+  color: hsl(292, 42%, 14%);
   font-weight: 600;
   position: relative;
-  left: 10px;
+  left: 50px;
+  font-size: 1.2rem;
 }
 
 hr {
