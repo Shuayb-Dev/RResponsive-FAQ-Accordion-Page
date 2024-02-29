@@ -9,6 +9,26 @@ body {
   background-color: hsl(275, 100%, 97%);
 }
 
+#buttonImg {
+  position: relative;
+  left: 158px;
+}
+
+#buttonImgTwo {
+  position: relative;
+  left: 403px;
+}
+
+#buttonImgThree {
+  position: relative;
+  left: 153px;
+}
+
+#buttonImgFour {
+  position: relative;
+  left: 42px;
+}
+
 .faqContainer {
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
@@ -41,13 +61,23 @@ body {
   display: none;
 }
 
+#hiddenOne {
+  display: none;
+}
+
 .faq img {
   padding: 0px;
   margin: 0px;
   position: relative;
   top: 8px;
-  left: 40px;
+  left: 95px;
   display: inline;
+  height: 30px;
+  width: 30px;
+}
+
+.accordionContainer {
+  display: flex;
 }
 
 .faq h1 {
@@ -83,15 +113,76 @@ hr {
 
 @media only screen and (max-width: 900px) {
   body {
-    height: 300px;
-    width: 300px;
+    height: 400px;
     background-size: 300%;
+    overflow: hidden;
   }
 
   .faqContainer {
-    width: 300px;
-    height: 400px;
-    left: 15px;
-    top: 200px;
+    width: 360px;
+    height: auto;
+    left: 1px;
+    top: 160px;
+  }
+
+  .faq p {
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: justify;
+    width: 100%; /* Set width to 100% to fill the container */
+    max-width: 350px; /* Add max-width to prevent the paragraph from becoming too wide */
+    word-wrap: break-word; /* or overflow-wrap: break-word; */
+  }
+
+  .faq h1 {
+    font-family: "Work Sans", sans-serif;
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+    position: relative;
+    left: 10px;
+    font-size: 2rem;
+  }
+
+  .faq h1::before {
+    content: ""; /* Remove url() and specify content as an empty string */
+    background-image: url(imgs/icon-star.svg); /* Set the background image */
+    background-size: contain; /* Adjust background size to fit */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    display: inline-block; /* Make the pseudo-element an inline block */
+    width: 30px; /* Set the width of the pseudo-element */
+    height: 30px; /* Set the height of the pseudo-element */
+    margin-right: 15px; /* Adjust margin as needed */
+    position: relative;
+    top: 35px;
+  }
+
+  .faq h2 {
+    font-family: "Work Sans", sans-serif;
+    color: hsl(292, 42%, 14%);
+    font-weight: 600;
+    position: relative;
+    left: 5px;
+    font-size: 0.7rem;
+  }
+
+  #buttonImg {
+    position: relative;
+    left: 30px;
+  }
+
+  #buttonImgTwo {
+    position: relative;
+    left: 173px;
+  }
+
+  #buttonImgThree {
+    position: relative;
+    left: 27px;
+  }
+
+  #buttonImgFour {
+    position: relative;
+    left: 316px;
   }
 }
