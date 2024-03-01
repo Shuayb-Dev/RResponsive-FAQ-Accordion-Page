@@ -61,6 +61,7 @@ hr {
   color: hsl(292, 42%, 14%);
   position: relative;
   right: 100px;
+  font-size: 2rem;
 }
 
 .accordianOne {
@@ -181,4 +182,63 @@ hr {
 #showFour {
   display: none;
   text-align: justify;
+}
+
+#hidden,
+#hiddenTwo,
+#hiddenThree {
+  display: none;
+}
+
+@media screen and (max-width: 590px) {
+  body {
+    background-size: 350%;
+    overflow: hidden;
+  }
+
+  .faqContainer {
+    height: auto;
+    width: 330px;
+    position: relative;
+    top: 50px;
+  }
+
+  .faqHeader {
+    position: relative;
+    left: 50px;
+    font-size: 1.2rem;
+  }
+
+  .faqHeader img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 220px;
+  }
+
+  .accordianOne h2,
+  .accordianTwo h2,
+  .accordianThree h2,
+  .accordianFour h2 {
+    font-size: 1rem;
+  }
+
+  #headerOne,
+  #headerTwo,
+  #headerThree {
+    display: none;
+  }
+
+  .accordianOne p,
+  .accordianTwo p,
+  .accordianThree p,
+  .accordianFour p {
+    font-family: "Work Sans", sans-serif;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.8rem;
+    overflow: hidden;
+  }
 }
