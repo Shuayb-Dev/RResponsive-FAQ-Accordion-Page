@@ -40,7 +40,10 @@ function showHiddenThree() {
   let z = document.getElementById("showThree");
   let buttonImgThree = document.getElementById("buttonImgThree");
 
-  if (z.style.display === "none") {
+  // Get the computed value of the display property for the correct element
+  let displayStyle = window.getComputedStyle(z).getPropertyValue("display");
+
+  if (displayStyle === "none") {
     z.style.display = "block";
     buttonImgThree.src = "imgs/icon-minus.svg"; // Display the minus image
   } else {
@@ -49,11 +52,16 @@ function showHiddenThree() {
   }
 }
 
+showHiddenThree();
+
 function showHiddenFour() {
   let a = document.getElementById("showFour");
   let buttonImgFour = document.getElementById("buttonImgFour");
 
-  if (a.style.display === "none") {
+  // Get the computed value of the display property for the correct element
+  let displayStyle = window.getComputedStyle(a).getPropertyValue("display");
+
+  if (displayStyle === "none") {
     a.style.display = "block";
     buttonImgFour.src = "imgs/icon-minus.svg"; // Display the minus image
   } else {
@@ -61,3 +69,5 @@ function showHiddenFour() {
     buttonImgFour.src = "imgs/icon-plus.svg"; // Display the plus image
   }
 }
+
+showHiddenFour();
