@@ -241,4 +241,10 @@ hr {
     font-size: 0.8rem;
     overflow: hidden;
   }
+
+  #hidden,
+  #hiddenTwo,
+  #hiddenThree {
+    display: block;
+  }
 }
