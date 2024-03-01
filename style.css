@@ -12,10 +12,96 @@ body {
 
 .faqContainer {
   height: 600px;
-  width: 400px;
+  width: 550px;
   background-color: white;
   display: flex;
   flex-direction: column;
   position: relative;
   top: 100px;
+}
+
+.faqHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqHeader img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  right: 250px;
+}
+
+.faqHeader h1 {
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+  position: relative;
+  right: 100px;
+}
+
+.accordianOne {
+  display: inline-block;
+}
+
+.accordianOne img {
+  float: right;
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+}
+
+.accordianOne h2 {
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.accordianOne p {
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 16%, 49%);
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#show {
+  display: none;
+}
+
+hr {
+  width: 80%;
+  color: hsl(275, 100%, 97%);
+  opacity: 0.2;
+}
+
+.accordianTwo {
+  display: inline-block;
+}
+
+.accordianTwo img {
+  float: right;
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+}
+
+.accordianTwo h2 {
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.accordianTwo {
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 16%, 49%);
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#showTwo {
+  display: none;
 }

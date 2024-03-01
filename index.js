@@ -2,7 +2,10 @@ function showHiddenOne() {
   let x = document.getElementById("show");
   let buttonImg = document.getElementById("buttonImg");
 
-  if (x.style.display === "none") {
+  // Get the computed value of the display property
+  let displayStyle = window.getComputedStyle(x).getPropertyValue("display");
+
+  if (displayStyle === "none") {
     x.style.display = "block";
     buttonImg.src = "imgs/icon-minus.svg"; // Display the minus image
   } else {
@@ -11,11 +14,17 @@ function showHiddenOne() {
   }
 }
 
+// Call showHiddenOne() initially to hide the text when the page loads
+showHiddenOne();
+
 function showHiddenTwo() {
   let y = document.getElementById("showTwo");
   let buttonImgTwo = document.getElementById("buttonImgTwo");
 
-  if (y.style.display === "none") {
+  // Get the computed value of the display property for the correct element
+  let displayStyle = window.getComputedStyle(y).getPropertyValue("display");
+
+  if (displayStyle === "none") {
     y.style.display = "block";
     buttonImgTwo.src = "imgs/icon-minus.svg"; // Display the minus image
   } else {
@@ -23,6 +32,9 @@ function showHiddenTwo() {
     buttonImgTwo.src = "imgs/icon-plus.svg"; // Display the plus image
   }
 }
+
+// Call showHiddenOne() initially to hide the text when the page loads
+showHiddenTwo();
 
 function showHiddenThree() {
   let z = document.getElementById("showThree");
